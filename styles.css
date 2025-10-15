@@ -942,8 +942,8 @@ h1, h2, h3 {
     padding: 15px;
     border: 2px solid transparent;
     border-radius: 10px;
-    background: var(--deep-navy);
-    color: #E8E8E8;
+    background: var(--white);
+    color: var(--text-dark);
     font-family: inherit;
     font-size: 0.95rem;
     transition: border-color 0.3s ease;
@@ -952,9 +952,9 @@ h1, h2, h3 {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 0.4);
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    border-color: var(--success-green);
+    background: var(--white);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.2);
 }
 
 .contact-form textarea {
