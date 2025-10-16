@@ -40,14 +40,11 @@ h1, h2, h3 {
 
 /* Navigation */
 .navbar {
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: fixed;
+    background: transparent;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -61,7 +58,7 @@ h1, h2, h3 {
 }
 
 .nav-logo h2 {
-    color: var(--white);
+    color: var(--text-dark);
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     font-size: 1.8rem;
@@ -75,7 +72,7 @@ h1, h2, h3 {
 
 .nav-menu a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--text-dark);
     font-weight: 500;
     font-size: 0.95rem;
     transition: all 0.3s ease;
@@ -111,7 +108,7 @@ h1, h2, h3 {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--white);
+    background: var(--text-dark);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -132,9 +129,9 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    background: url('images/pic5.jpeg');
+    background: url('images/pic23.jpeg');
     background-size: cover;
-    background-position: center 20%;
+    background-position: center;
     position: relative;
     display: flex;
     align-items: center;
@@ -155,10 +152,10 @@ h1, h2, h3 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    gap: 80px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     position: relative;
     z-index: 2;
 }
@@ -178,11 +175,15 @@ h1, h2, h3 {
 }
 
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: var(--white);
+    color: var(--text-dark);
     margin-bottom: 15px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-text p {
+    color: var(--text-dark);
+    font-size: 1.1rem;
 }
 
 .hero-subtitle {
