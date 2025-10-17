@@ -182,3 +182,12 @@ if ('IntersectionObserver' in window) {
         imageObserver.observe(img);
     });
 }
+
+// Video play function
+function playVideo() {
+    const thumbnail = document.querySelector('.video-thumbnail');
+    const videoEmbed = document.getElementById('videoEmbed');
+    
+    thumbnail.style.display = 'none';
+    videoEmbed.style.display = 'block';
+}
